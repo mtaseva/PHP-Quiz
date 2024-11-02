@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="mk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PHP Квиз</title>
+
+        <style>
+
+            .header {
+                display: flex;
+                align-items: flex-end;
+                background-color: gray;
+                padding: 0%;
+            }
+
+            .header img {
+                width: 150px;
+                height: auto;
+                margin: 0;
+            }
+
+            .header h1 {
+                margin: 0;
+            }
+
+        </style>
+
+    </head>
+    <body style="background-color: rgb(184, 183, 183);">
+        <form action="./results.php" method="post">
+
+            <div class="header">
+                <img src="./logo.png" alt="Logo">
+                <h1><b>КВИЗ</b></h1>
+            </div>
+
+            <p><b>1. PHP е скриптен јазик за веб програмирање кој се користи за развој на...?</b></p>
+            <input value="din" type="radio" id="d" name="selektiraj1">
+            <label for="d">динамички HTML содржини</label><br>
+            <input value="sta" type="radio" id="s" name="selektiraj1">
+            <label for="s">статички HTML содржини</label><br>
+
+            <p><b>2. Извршувањето на PHP кодот е на страната на...?</b></p>
+            <input value="preb" type="radio" id="p" name="selektiraj2">
+            <label for="p">пребарувачот</label><br>
+            <input value="web" type="radio" id="w" name="selektiraj2">
+            <label for="w">веб серверот</label><br>
+            <input value="baza" type="radio" id="b" name="selektiraj2">
+            <label for="b">серверот за управување на бази на податоци</label><br>
+
+            <p><b>3. Со кој знак започнуваат променливите во PHP?</b></p>
+            <input value="hash" type="radio" id="h" name="selektiraj3">
+            <label for="h">#</label><br>
+            <input value="and" type="radio" id="a" name="selektiraj3">
+            <label for="a">&</label><br>
+            <input value="dollar" type="radio" id="do" name="selektiraj3">
+            <label for="do">$</label><br>
+
+            <p><b>4. Кои од следните променливи се невалидни во PHP?</b></p>
+            <input value="izbor1" type="checkbox" id="ab12" name="selektiraj4[]">
+            <label for="ab12">ab = 12;</label><br>
+            <input value="izbor2" type="checkbox" id="ab10" name="selektiraj4[]">
+            <label for="ab10">$ab = 10;</label><br>
+            <input value="izbor3" type="checkbox" id="5ab" name="selektiraj4[]">
+            <label for="5ab">$_5ab = 15;</label><br>
+            <input value="izbor4" type="checkbox" id="2ab" name="selektiraj4[]">
+            <label for="2ab">$2ab = 0;</label><br>
+
+            <p><b>5. Што ќе испечати следниот израз?</b></p>
+            <pre>
+            <code>
+&lt;?php
+    $x = "12" + 16;
+    echo ($x);
+?&gt;
+            </code>
+            </pre>
+            <input type="text" id="php" name="selektiraj5" size="15"><br>
+
+            <p><b>6. Што ќе испечати следниот израз?</b></p>
+            <pre>
+            <code>
+&lt;?php
+    $stuff = array("Hi", "5");
+    echo $stuff[1]. "\n";
+?&gt;
+            </code>
+            </pre>
+            <input type="text" id="php2" name="selektiraj6" size="15">
+
+            <p><b>7.</b>
+            <select id="options" name="selektiraj7">
+                <option value="prazno">...</option>
+                <option value="print_r()" >print_r()</option>
+                <option value="print()">print()</option>
+                <option value="var_dump()">var_dump()</option>
+            </select>
+            <b>дава поопширен приказ за информации за променливите кај PHP.</b></p>
+
+            <p><b>8. Напишете ги трите видови на коментари одвоени со запирка во PHP? (коментарот да е „rezultat“)</b></p>
+            <textarea id="multilineText" name="selektiraj8" rows="3" cols="20"></textarea>
+
+            <p><b>9. Операторот === споредува ...?</b></p>
+            <input value="radio1" type="radio" id="r1" name="selektiraj9">
+            <label for="r2">тип</label><br>
+            <input value="radio2" type="radio" id="r2" name="selektiraj9">
+            <label for="r2">тип и вредност</label><br>
+            <input value="radio3" type="radio" id="r3" name="selektiraj9">
+            <label for="r3">вредност</label><br>
+
+            <p><b>10. Што ќе испечати следниот израз?</b></p>
+            <pre>
+            <code>
+&lt;?php
+    $x = 6;
+    $y = 15 + $x++;
+    echo "x is $x and y is $y"\n;
+?&gt;
+            </code>
+            </pre>
+            <input value="radio4" type="radio" id="r4" name="selektiraj10">
+            <label for="r4">x is 7 and y is 21</label><br>
+            <input value="radio5" type="radio" id="r5" name="selektiraj10">
+            <label for="r5">x is 6 and y is 21</label><br>
+            <input value="radio6" type="radio" id="r6" name="selektiraj10">
+            <label for="r6">x is 7 and y is 20</label><br><br>
+
+            <input type="reset" value="Избриши" style="background-color:rgb(181, 181, 181)">
+            <input type="submit" value="Испрати" style="background-color:rgb(181, 181, 181)">
+
+        </form>
+    </body>
+</html>
