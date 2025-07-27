@@ -18,11 +18,17 @@ The app is ideal for small-scale quiz systems, practice tests, or educational de
 ## 🧩 Project Structure
 
 PHP-Quiz-main/
+
 ├── index.php # Starting page for the quiz
+
 ├── question.php # Handles question display and logic
+
 ├── final.php # Displays the result after last question
+
 ├── process.php # Processes answers and scores
+
 ├── database.php # Contains quiz questions and options
+
 └── style.css # Optional styling for the UI
 
 ## 🚀 How to Run
